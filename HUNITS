@@ -30,6 +30,20 @@ while True:
     ev3.screen.print(Buttons)
 
     if Buttons == [Button.DOWN]:
+        MmotorL.run_time(570,500,wait=False)
+
+    elif Buttons == [Button.UP]:
+        MmotorL.run_time(-50,500,wait=False)
+
+    elif Buttons == [Button.LEFT]:
+        MmotorR.run_time(560,500,wait=False)
+
+    elif Buttons == [Button.RIGHT]:
+        MmotorR.run_time(-500,500,wait=False)
+
+    ev3.screen.print(Buttons)
+
+    if Buttons == [Button.DOWN]:
         MmotorL.run_time(50,500,wait=False)
 
     elif Buttons == [Button.UP]:
